@@ -33,11 +33,6 @@ function onReady(){
       const checkbox = document.createElement('input');
       checkbox.type = "checkbox";
 
-      checkbox.addEventListener('click', () =>{
-          newLi.style.setProperty('text-decoration', 'line-through');
-      });
-
-
       newLi.textContent = toDo.title;
 
       toDoList.appendChild(newLi);
