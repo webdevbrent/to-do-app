@@ -35,6 +35,16 @@ function onReady(){
       const checkbox = document.createElement('input');
       checkbox.type = "checkbox";
 
+      checkbox.addEventListener('click', event => {
+        if (checkbox.checked){
+          toDos.complete = true;
+        }else {
+          toDos.complete = false;
+        }
+
+        console.log(toDos.complete);
+      });
+
       const delButton = document.createElement('button');
       delButton.innerText = "Delete";
 
